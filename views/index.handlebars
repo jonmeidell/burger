@@ -1,0 +1,9 @@
+{{!-- Setup the index.handlebars to have the template that Handlebars can render onto. --}}
+
+<ul>
+	{{#each burgers}}
+	{{#unless devoured}}
+	{{> burgers devoured=true}}
+	{{/unless}}
+	{{/each}}
+</ul>
