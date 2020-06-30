@@ -6,7 +6,7 @@
 
 
 // Export at the end of the burger.js file.
-const orm = require("../config/orm");
+const orm = require("../config/orm.js");
 let burger = {
     selectAll: function (cb) {
         orm.selectAll("burgers", function (res) {
