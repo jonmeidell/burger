@@ -14,7 +14,7 @@
 
 
 // Export the ORM object in module.exports.
-const connection = require("../config/connection.js");
+const connection = require("./connection.js");
 
 function printQuestionMarks(num) {
     let arr = [];
