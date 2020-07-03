@@ -21,6 +21,7 @@ const mysql = require("mysql");
 
 var config = require("./config.js");
 var connection = mysql.createConnection(config.mysql.url);
+console.log("connection host is : " + connection.config.host);
 connection.connect(function (error) {
     if (error) throw error;
     console.log("connected to database on " + connection.config.host + " as "
