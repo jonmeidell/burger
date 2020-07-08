@@ -18,9 +18,14 @@ const mysql = require("mysql");
 // });
 // // Export connection for our ORM to use.
 // module.exports = connection;
+if (process.env.NODE_ENV === 'production') {
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+    connection = mysql.createConnection(process.env.DB_URL);
+};
 
-var config = require("./config.js");
-var connection = mysql.createConnection(config.mysql.url);
+//var config = require("./config.js");
+//var connection = mysql.createConnection(config.mysql.url);
 console.log("connection host is : " + connection.config.host);
 connection.connect(function (error) {
     if (error) throw error;
