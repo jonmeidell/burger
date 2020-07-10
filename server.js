@@ -15,5 +15,5 @@ app.set("view engine", "handlebars");
 const routes = require("./controllers/burgers_controller");
 app.use(routes);
 app.listen(PORT, function () {
-    console.log("Grilling burgers on http://localhost:" + PORT);
+    console.log("Grilling burgers on " + PORT);
 });
