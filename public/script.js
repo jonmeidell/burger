@@ -3,14 +3,15 @@ $(document).ready(function () {
     // submit button
     // ajax method put url
     $(".create-form").on("submit", function (event) {
+
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
         let newBurger = {
-            name: $("#").val().trim(),
-            devoured: $("[name=devoured]:checked").val().trim()
+            name: $("#burg").val().trim(),
+            devoured: $("[name=devour]:checked").val()
         };
         // Send the POST request.
-        $.ajax("/api/burger", {
+        $.ajax("/api/burgers", {
             type: "POST",
             data: newBurger
         }).then(
@@ -20,6 +21,7 @@ $(document).ready(function () {
                 location.reload();
             }
         );
+        alert("test");
     });
 
     $(".change-eaten").on("click", function (event) {
