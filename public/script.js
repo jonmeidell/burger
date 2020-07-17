@@ -23,6 +23,7 @@ $(document).ready(function () {
         );
         alert("test");
     });
+    // delete burger from database
 
     $(".change-eaten").on("click", function (event) {
 		let id = $(this).data("id");
@@ -41,5 +42,7 @@ $(document).ready(function () {
 				location.reload();
 			}
 		);
-	});
+    });
+    // create one to change from eaten to not eaten
+
 })
