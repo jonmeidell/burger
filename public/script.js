@@ -1,9 +1,6 @@
 $(document).ready(function () {
 
-    // submit button
-    // ajax method put url
     $(".create-form").on("submit", function (event) {
-
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
         let newBurger = {
@@ -21,16 +18,15 @@ $(document).ready(function () {
                 location.reload();
             }
         );
-        alert("test");
     });
     // delete burger from database
-
     $(".change-eaten").on("click", function (event) {
 		let id = $(this).data("id");
 		let newDevoured = $(this).data("newdevoured");
 		let newDevouredState = {
-			devoured: newDevoured
-		};
+            devoured: newDevoured
+            // Add toggle to Not Tried/Devoured
+        };
 		// Send the PUT request.
 		$.ajax("/api/burger/" + id, {
 			type: "PUT",
@@ -44,5 +40,4 @@ $(document).ready(function () {
 		);
     });
     // create one to change from eaten to not eaten
-
 })
