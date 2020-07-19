@@ -20,15 +20,12 @@
 <h2>Add a burger:</h2>
 <form class="create-form">
 	<div class="form-group">
-		<label for="burg">Burger name:</label>
-		<input type="text" id="burg" name="name">
+		<input type="text" id="burg" name="name" placeholder="Enter burger name...">
 	</div>
 	<div class="form-group">
-		<label for="devour">Devoured?</label>
-		<br>
 		<input type="radio" name="devour" value="1" checked> Devoured
 		<br>
-		<input type="radio" name="devour" value="0"> Uneaten
+		<input type="radio" name="devour" value="0"> Haven't eaten...yet
 	</div>
-	<button type="submit">Add burger</button>	
+	<button type="submit" class="submit btn btn-block btn-lg btn-info">Add burger</button>	
 </form>
