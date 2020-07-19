@@ -18,8 +18,29 @@ router.post("/api/burgers", function (req, res) {
     ], [
         req.body.name, req.body.devoured
     ], function (result) {
-        res.json({ id: result.insertId});
+        res.json({ id: result.insertId });
     });
 });
+
+router.put("/api/burger/:burgerId", function (req, res) {
+    let id = "id=" + "'" + req.params.burgerId + "'";
+    burger.updateOne(
+        { "devoured": req.body.devoured = 0 ? true : false },
+        id,
+        function (result) {
+            console.log(result)
+            res.json({ id: result.changedRows });
+        })
+})
+
+router.delete("/api/burger/:burgerId", function (req, res) {
+    let id = "id=" + "'" + req.params.burgerId + "'";
+    burger.deleteOne(
+        id,
+        function (result) {
+            console.log(result)
+            res.json({ id: result.deletedRows });
+        })
+})
 
 module.exports = router;

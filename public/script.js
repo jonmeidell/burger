@@ -19,13 +19,12 @@ $(document).ready(function () {
             }
         );
     });
-    // delete burger from database
+
     $(".change-eaten").on("click", function (event) {
 		let id = $(this).data("id");
 		let newDevoured = $(this).data("newdevoured");
 		let newDevouredState = {
             devoured: newDevoured
-            // Add toggle to Not Tried/Devoured
         };
 		// Send the PUT request.
 		$.ajax("/api/burger/" + id, {
@@ -35,9 +34,23 @@ $(document).ready(function () {
 			function () {
 				console.log("changed eaten status to", newDevoured);
 				// Reload the page to get the updated list
-				location.reload();
+                location.reload();
 			}
 		);
     });
-    // create one to change from eaten to not eaten
+
+    $(".delete").on("click", function (event) {
+		let id = $(this).data("id");
+
+		$.ajax("/api/burger/" + id, {
+			type: "DELETE",
+		}).then(
+			function () {
+				console.log("thrown away");
+				// Reload the page to get the updated list
+                location.reload();
+			}
+		);
+    });
+
 })
