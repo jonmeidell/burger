@@ -8,4 +8,4 @@ This site uses CSS, Javascript, Ajax, MySQL, and Handlebars.
 
 Use the deployed site link in the upper-right corner to be directed to the application to get started on keeping track of your heart-clogging adventures.
 
-![Space Burger](https://jonmeidell.github.io/assets/burger/public/img/burger-space.gif)
+![Space Burger](https://jonmeidell.github.io/burger/public/img/burger-space.gif)
