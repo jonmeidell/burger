@@ -1,0 +1,22 @@
+body {
+    background-size: 100%;
+    background-color: #f1b06a;
+    background-repeat: no-repeat;
+    background-image: url("/public/img/burger-background.png");
+}
+
+#navbar {
+    margin-top: 28px;
+}
+
+.create-form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 7px !important;
+}
+
+#burgers {
+    border: outset;
+    border-radius: 3px;
+}
