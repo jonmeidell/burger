@@ -9,11 +9,17 @@ body {
     margin-top: 28px;
 }
 
+.individual-burgers {
+    /* not working */
+    padding-top: 7px;
+}
+
 .create-form {
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    padding-top: 7px !important;
+    /* not working */
+    padding-top: 7px;
 }
 
 #burgers {

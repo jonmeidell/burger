@@ -8,13 +8,13 @@
 			<div class="row">
 				{{!-- not devoured --}}
 				<h2>Burgers not yet tried:</h2>
-				<ul>
+				<div>
 					{{#each burgers}}
 					{{#unless devoured}}
 					{{> devoured}}
 					{{/unless}}
 					{{/each}}
-				</ul>
+				</div>
 			</div>
 		</div>
 		{{!-- devoured --}}
@@ -22,13 +22,13 @@
 			<div class="row">
 				{{!-- not devoured --}}
 				<h2>Burgers I've eaten:</h2>
-				<ul>
+				<div>
 					{{#each burgers}}
 					{{#if devoured}}
 					{{> devoured }}
 					{{/if}}
 					{{/each}}
-				</ul>
+				</div>
 			</div>
 		</div>
 		{{!-- add a burger --}}
