@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    // add a burger
     $(".create-form").on("submit", function (event) {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
@@ -19,7 +19,7 @@ $(document).ready(function () {
             }
         );
     });
-
+    // change devoured status
     $(".change-eaten").on("click", function (event) {
 		let id = $(this).data("id");
 		let newDevoured = $(this).data("newdevoured");
@@ -38,7 +38,7 @@ $(document).ready(function () {
 			}
 		);
     });
-
+    // delete a burger
     $(".delete").on("click", function (event) {
 		let id = $(this).data("id");
 
