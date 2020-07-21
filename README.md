@@ -5,7 +5,10 @@
 
 A database tracker used to add, modify, delete burgers conquered by myself.  It database has already been seeded to show the layout of the site.
 
+<div align="center">
+
 ![Burger Time](https://jonmeidell.github.io/assets/images/burgertime.gif)
+</div>
 
 #### Technologies used in the creation of this site:
 * CSS
