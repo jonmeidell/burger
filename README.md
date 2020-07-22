@@ -18,7 +18,9 @@ A database tracker used to add, modify, delete burgers conquered by myself.  It 
 * MySQL
 * Handlebars
 
-_Use the deployed site link in the upper-right corner to be directed to the application to get started on keeping track of your heart-clogging adventures._
+_Use the following link to be directed to the application to get started on keeping track of your heart-clogging adventures:_
+
+_**[Click here to use Burger Tracker](https://burger-shame-jm.herokuapp.com/)**_
 
 <div align="center">
 
