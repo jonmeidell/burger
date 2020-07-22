@@ -21,7 +21,7 @@ router.post("/api/burgers", function (req, res) {
         res.json({ id: result.insertId });
     });
 });
-
+// not working properly, only changes devoured status one way
 router.put("/api/burger/:burgerId", function (req, res) {
     let id = "id=" + "'" + req.params.burgerId + "'";
     burger.updateOne(

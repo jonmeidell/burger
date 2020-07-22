@@ -6,6 +6,10 @@ body {
     background-color: #f1b06a;
 }
 
+.row {
+    justify-content: center;
+}
+
 #navbar {
     margin-top: 28px;
 }
@@ -24,6 +28,13 @@ body {
 }
 
 #burgers {
-    border: outset;
-    border-radius: 3px;
+    border: ridge;
+    border-width: 2px;
+    border-color: #6a78f1;
+    border-radius: 6px;
+    background-color: #f1b06a;
+}
+
+.form-group {
+    margin-bottom: 0;
 }
