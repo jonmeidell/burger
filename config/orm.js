@@ -4,7 +4,7 @@ function printQuestionMarks(num) {
     let arr = [];
     for (let i = 0; i < num; i++) {
         arr.push("?");
-    }
+    };
     return arr.toString();
 };
 
@@ -18,15 +18,15 @@ function objToSql(ob) {
             // if string with spaces, add quotations (Lana Del Grey => 'Lana Del Grey')
             if (typeof value === "string" && value.indexOf(" ") >= 0) {
                 value = "'" + value + "'";
-            }
+            };
             // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
             // e.g. {sleepy: true} => ["sleepy=true"]
             arr.push(key + "=" + value);
-        }
-    }
+        };
+    };
     // translate array of strings to a single comma-separated string
     return arr.toString();
-}
+};
 
 let orm = {
     selectAll: function (tableInput, cb) {
@@ -85,6 +85,6 @@ let orm = {
             cb(result);
         });
     }
-}
+};
 
 module.exports = orm;

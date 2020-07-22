@@ -30,8 +30,8 @@ router.put("/api/burger/:burgerId", function (req, res) {
         function (result) {
             console.log(result)
             res.json({ id: result.changedRows });
-        })
-})
+        });
+});
 
 router.delete("/api/burger/:burgerId", function (req, res) {
     let id = "id=" + "'" + req.params.burgerId + "'";
@@ -40,7 +40,7 @@ router.delete("/api/burger/:burgerId", function (req, res) {
         function (result) {
             console.log(result)
             res.json({ id: result.deletedRows });
-        })
-})
+        });
+});
 
 module.exports = router;
