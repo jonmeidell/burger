@@ -20,7 +20,7 @@ A database tracker used to add, modify, delete burgers conquered by myself.  It 
 
 _Use the following link to be directed to the application to get started on keeping track of your heart-clogging adventures:_
 
-<a href="https://burger-shame-jm.herokuapp.com/" target="_blank" rel="noopener"><span><b><i>Click here to use Burger Tracker</i></b></span></a>
+_**[Click here to use Burger Tracker](https://burger-shame-jm.herokuapp.com/)**_
 
 <div align="center">
 
