@@ -25,7 +25,7 @@ router.post("/api/burgers", function (req, res) {
 router.put("/api/burger/:burgerId", function (req, res) {
     let id = "id=" + "'" + req.params.burgerId + "'";
     burger.updateOne(
-        { "devoured": req.body.devoured = 0 ? false : true },
+        { "devoured": req.body.devoured},
         id,
         function (result) {
             console.log(result)

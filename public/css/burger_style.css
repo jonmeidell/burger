@@ -11,6 +11,18 @@ body {
     background-size: cover;
 }
 
+#burg {
+    border-radius: 6px;
+}
+
+#burgers {
+    border: ridge;
+    border-width: 2px;
+    border-color: #6a78f1;
+    border-radius: 6px;
+    background-color: #f1b06a;
+}
+
 #grillin {
     border: ridge;
     border-width: 2px;
@@ -18,16 +30,8 @@ body {
     border-radius: 6px;
 }
 
-.row {
-    justify-content: center;
-}
-
 #navbar {
     margin-top: 28px;
-}
-
-.individual-burgers {
-    padding-top: 7px;
 }
 
 .create-form {
@@ -43,16 +47,16 @@ body {
     background-color: #f1b06a;
 }
 
-#burgers {
-    border: ridge;
-    border-width: 2px;
-    border-color: #6a78f1;
-    border-radius: 6px;
-    background-color: #f1b06a;
-}
-
 .form-group {
     margin-bottom: 0;
+}
+
+.individual-burgers {
+    padding-top: 7px;
+}
+
+.row {
+    justify-content: center;
 }
 
 /* mobile responsiveness */
@@ -66,12 +70,12 @@ body {
         /* add parallax scrolling */
     }
 
+    h1 {
+        text-shadow: 2px 2px 5px #9dce5b;
+    }
+
     #grillin {
         width: 100%;
         height: auto;
-    }
-
-    h1 {
-        text-shadow: 2px 2px 5px #9DCE5B;
     }
 }

@@ -25,7 +25,7 @@ $(document).ready(function () {
         let newDevoured = $(this).data("newdevoured");
         console.log("devoured state is: " + newDevoured);
 		let newDevouredState = {
-            devoured: newDevoured
+            devoured: newDevoured === 0 ? true : false
         };
 		// Send the PUT request.
 		$.ajax("/api/burger/" + id, {
@@ -33,7 +33,6 @@ $(document).ready(function () {
 			data: newDevouredState
 		}).then(
 			function () {
-				console.log("changed eaten status to", newDevoured);
 				// Reload the page to get the updated list
                 location.reload();
 			}
