@@ -1,9 +1,10 @@
 body {
     /* not working */
-    background-image: url("img/burger-background.png");
+    background-image: url("../img/burger-background.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #f1b06a;
+    /* add parallax scrolling */
 }
 
 .row {
@@ -14,8 +15,14 @@ body {
     margin-top: 28px;
 }
 
+#grillin {
+    border: ridge;
+    border-width: 2px;
+    border-color: #6a78f1;
+    border-radius: 6px;
+}
+
 .individual-burgers {
-    /* not working */
     padding-top: 7px;
 }
 
@@ -23,8 +30,13 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    /* not working */
     padding-top: 7px;
+    /* border */
+    border: ridge;
+    border-width: 2px;
+    border-color: #6a78f1;
+    border-radius: 6px;
+    background-color: #f1b06a;
 }
 
 #burgers {

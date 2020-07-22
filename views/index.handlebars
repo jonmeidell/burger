@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-md-12 text-center" id="navbar">
 			{{!-- image not showing --}}
-			<img src="/public/img/burger-on-grill.gif" alt="Grilling Burgers" />
+			<img id="grillin" src="../img/burger-on-grill.gif" alt="Grilling Burgers">
 			<h1>Heart Cloggers</h1>
 		</div>
 		<div id="burgers" class="col-md-6 text-center" class="task">
@@ -26,7 +26,7 @@
 				<div>
 					{{#each burgers}}
 					{{#if devoured}}
-					{{> devoured }}
+					{{> devoured}}
 					{{/if}}
 					{{/each}}
 				</div>
