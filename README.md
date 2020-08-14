@@ -3,7 +3,7 @@
 # `Burger Tracker`
 </div>
 
-A database tracker used to add, modify, delete burgers conquered by myself.  It database has already been seeded to show the layout of the site.
+A database tracker used to add, modify, delete burgers conquered by myself.  The database has already been seeded to show the layout of the site.
 
 <div align="center">
 
